@@ -1,0 +1,173 @@
+
+
+body{
+font-family: 'Nunito', sans-serif;
+background-color: #fd473c;
+}
+
+#container{
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 140px;
+    padding-right: 140px;
+    background-color: white;
+    min-width: 1175px;
+}
+
+#header{
+    height: 150px;
+}
+
+#header img{
+    height: 60px;
+    margin: 2%;
+    float: left;
+}
+
+
+#navbar {
+    padding:2%;
+    margin:auto;
+    margin: 2%;
+    height: 120px;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+#navbar li{
+    float: right;
+    list-style: none;
+}
+
+#navbar li a{
+    width:120px;
+    height: 40px;
+    display: block;
+    text-decoration:none;
+    text-align: center;
+    line-height: 40px;
+    color: #4b4b4b;
+    transition: all 0.3s linear;
+}
+
+#navbar li a:hover, a:focus{
+    color: #ff7d31;
+}
+
+#intro{
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    min-width: 680px;
+    color: #fd473c;
+}
+
+.project{
+    width: 30%;
+    min-width: 200px;
+    max-width: 500px;
+    min-height: 100px;
+    float: left;
+    margin: 15px;
+    position: relative;
+    text-align: center;
+    -webkit-transition:  500ms;
+    -moz-transition:  500ms;
+    -o-transition:  500ms;
+    transition:  500ms;
+}
+
+.project img{
+    width: 100%;
+}
+
+.project img:hover{
+    background-color:rgba(255,255,255,0.5);
+}
+
+
+.project h3{
+    visibility: hidden;
+    top: 30px;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14pt;
+    color: #4b4b4b;
+    margin: auto;
+
+}
+
+.project p{
+    visibility: hidden;
+    top: 60px;
+    position: absolute;
+    z-index: 1;
+    color: #4b4b4b;
+    margin: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+.project:hover h3{
+    visibility: visible;
+}
+
+.project:hover p{
+    visibility: visible;
+}
+
+.project:hover img{
+opacity: 0.2;
+}
+
+
+.description{
+    width: 28%;
+    min-width: 200px;
+    max-width: 500px;
+    min-height: 100px;
+    float: left;
+    margin: 15px;
+    position: relative;
+    text-align: left;
+    float: right;
+    margin: 15px;
+}
+
+.description h4{
+    color: #fd473c;
+}
+
+.description p{
+    color: #4b4b4b;
+}
+
+.row{
+    min-height: 200px;
+    max-height: 350px;
+    border: 1px solid red;
+}
+
+#current{
+
+}
+
+#experience{
+
+}
+
+#projects-skills{
+
+}
+
+#projects-skills2{
+
+}
+
+#footer{
+    height: 150px;
+}
