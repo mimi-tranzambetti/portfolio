@@ -27,6 +27,24 @@
         
 <!--colors: coral #ff7d31 and tomato #fd473c. text written in dark slate gray #4b4b4b-->
 
+<!-- trying the typed script-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="jquery.js"></script>
+        <script src="typed.js-master/js/typed.js"></script>
+            <script src="typed.js"></script>
+            <script>
+              $(function(){
+                  $(".element").typed({
+                    strings: ["maker", "designer"],
+                    typeSpeed: 60,
+                    loop: true,
+                    backDelay: 500,
+                    backSpeed: 20,
+                      
+                      
+                  });
+              });
+            </script>
         
     </head>
     
@@ -47,8 +65,9 @@
             <br>
             
             <div id="intro" style="clear: both;">
-                <h2>I'm a maker and designer with a </h2>
+                <h2>I'm a <span class="element" style="color: #ff7d31;"></span> with a </h2>
                 <h2>background in studio art and robotics. </h2>
+                
             </div> <!-- close intro -->
             
             <br><br><br>
