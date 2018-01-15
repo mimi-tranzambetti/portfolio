@@ -28,7 +28,8 @@ body{
     background-color: #f8f8f8;
     padding: 30px;
 }
-#intro{
+
+.intro, .project-intro{
     font-family: 'Calibre Semibold';
     text-align: left;
     margin-left: 30px;
@@ -38,12 +39,29 @@ body{
     margin-top: 60px;
 }
 
-#intro h2{
+.project-intro{
+    margin: auto;
+    width: 70%;
+    min-width: 280px;
+    max-width: 600px;
+    margin-top: 60px;
+}
+
+
+.intro h2, .project-intro h2{
     color: #ff4622;
     font-size: 2.5em;
 }
 
-#intro p{
+.project-intro h3{
+    text-transform: uppercase;
+    letter-spacing: 1.2;
+    font-size: 1.5em;
+    opacity: 0.5;
+    margin-top: 0;
+}
+
+.intro p, .project-intro p{
     font-family: 'Calibre Regular';
     font-size: 1.2em;
     opacity: 0.8;
@@ -66,7 +84,7 @@ body{
 .project{
     margin: auto;
     position: relative;
-    text-align: center;
+    text-align: left;
     -webkit-transition:  1s;
     -moz-transition:  1s;
     -o-transition:  1s;
@@ -94,7 +112,7 @@ body{
     opacity: 0;
     top: 25%;
     bottom: 60%;
-    left: 10%;
+    left: 15%;
     right: 10%;
     position: absolute;
     z-index: 1;
@@ -106,8 +124,8 @@ body{
     transition:  .5s;
     
     font-family: 'Calibre Semibold';
-    font-size: 1.5em; 
-    letter-spacing: 1.2pt;
+    font-size: 1.3em; 
+    letter-spacing: 1.1pt;
     text-transform: uppercase;
 
 }
@@ -115,9 +133,9 @@ body{
 .project p{
     opacity: 0;
     font-size: 1.2em;
-    top: 45%;
+    top: 40%;
     bottom: 20%;
-    left: 10%;
+    left: 15%;
     right: 10%;
     position: absolute;
     z-index: 1;
@@ -150,7 +168,7 @@ body{
 
 /* NAVBAR */
 
-nav, footer {
+nav {
 	padding: 15px 30px;
     width: 100%;
 	background: #fff;
@@ -205,12 +223,24 @@ a, a:visited {
     color: #333;
 }
 
-#footer{
-    height: 30px;
+footer{
     text-align: center;
     margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
 }
 
+
+.bio{
+    font-family: 'Calibre Regular';
+    font-size: 1.2em;
+    text-align: left;
+    margin: auto;
+    width: 70%;
+    min-width: 280px;
+    max-width: 600px;
+    margin-top: 60px;
+}
 
 .typed-cursor{
     opacity: 1;
@@ -267,11 +297,11 @@ a, a:visited {
   .project {
     width: calc(50% - 2rem);
   } 
-    #intro{
+    .intro{
     margin-left: 80px;
     }
     
-    #intro h2{
+    .intro h2, .project-intro h2{
         color: #ff4622;
         font-size: 3em;
     }
@@ -289,11 +319,11 @@ a, a:visited {
     width: calc(33.3333% - 2rem);
   }
     
-    #intro{
+    .intro{
     margin-left: 100px;
     }
     
-    #intro h2{
+    .intro h2, .project-intro h2{
     color: #ff4622;
     font-size: 4em;
 }
