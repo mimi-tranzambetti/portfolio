@@ -69,18 +69,23 @@ body{
 /* PROJECT PAGES */
 img{
     width: 100%;
-    margin: 20px;
+    margin-bottom: 20px;
 }
 
 .project-container{
     max-width: 800px;
     margin: auto;
-    
+    width: 80%;
+  
 }
 
 .project-container img{
-   width: 85%;
-   border:10px solid #fff;
+   width: 100%;
+    border:2px solid #fff;
+    -webkit-transition:  0.5s;
+    -moz-transition:  0.5s;
+    -o-transition:  0.5s;
+    transition:  0.5s;
 }
 
 /* IMAGE GALLERY */
@@ -104,6 +109,9 @@ img{
   width: 100% !important;
   height: auto !important;
   border: none;
+    margin-bottom: 0px;
+    margin: 15px;
+    
 }
 
 /*HOME FLEXBOX*/
@@ -180,7 +188,6 @@ img{
     
 }
 
-
 .project:hover h3{
     opacity: 1;
 }
@@ -248,13 +255,40 @@ nav {
         color: #ff4622;
     }
 
-    a, a:visited {text-decoration: none;}
-
 /* TEXT*/ 
-a, a:visited {
-	text-decoration: none;
-    color: #333;
+
+.description{
+    font-family: 'Calibre Semibold';
+    text-align: left;
+    margin: auto;
+    width: 100%;
+    min-width: 280px;
+    max-width: 600px;
+    margin-top: 10px;
 }
+
+.description h2{
+    color: #ff4622;
+    font-size: 1.6em;
+}
+
+.description h3{
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+    font-size: 1.2em;
+    opacity: 0.5;
+    margin-top: 0;
+}
+
+
+.description p{
+    font-family: 'Calibre Regular';
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+
+
+/* FOOTER */
 
 footer{
     text-align: center;
@@ -273,6 +307,32 @@ footer{
     min-width: 280px;
     max-width: 600px;
     margin-top: 60px;
+}
+
+.oops{
+    font-family: 'Calibre Semibold';
+   color: #ff4622;
+   font-size: 2em;
+	text-decoration: underline;
+}
+
+/* let's handle these links */
+a, a:visited {
+	text-decoration: none;
+    color: #333;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.description a, .intro a, .bio a{
+	color: #ff4622;
+}
+
+.description a:hover, .intro a:hover, .bio a:hover{
+	
+    text-decoration: underline;
 }
 
 .typed-cursor{
@@ -335,8 +395,11 @@ footer{
     }
     
     .intro h2, .project-intro h2{
-        color: #ff4622;
         font-size: 3em;
+    }
+    
+    .description h2{
+        font-size: 1.5em;
     }
     
     .navlinks{
@@ -344,12 +407,15 @@ footer{
         display: block;
     }
     
+    .project-container{
+        margin: auto;
+    }
     
   .gallery {
           -moz-column-count:    2;
           -webkit-column-count: 2;
           column-count:         2;
-      width: 85%;
+      width: 100%;
       -webkit-transition:  0.5s;
     -moz-transition:  0.5s;
     -o-transition:  0.5s;
@@ -360,12 +426,13 @@ footer{
 }
 
 @media screen and (min-width: 680px){
-            .project-container img{
+    .project-container img{
    width: 100%;
+    border:5px solid #fff;
 } 
-    .gallery {
-        width: 90%;
-        }
+    .gallery img{
+        border: none;
+    }
     
 }
 
@@ -383,13 +450,23 @@ footer{
     color: #ff4622;
     font-size: 4em; }
     
-      .gallery {
+      
+    
+        .project-container img{
+   width: 100%;
+    border:10px solid #fff;
+} 
+    
+    .gallery {
           -moz-column-count:    3;
           -webkit-column-count: 3;
           column-count:         3;
           width: 100%;
         }
     
+    .gallery img{
+        border: none;
+    }
 
     
 }
