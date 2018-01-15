@@ -67,7 +67,22 @@ body{
     opacity: 0.8;
 }
 
+/* PROJECT PAGES */
+img{
+    width: 100%;
+    margin: 20px;
+}
 
+.project-container{
+    max-width: 800px;
+    margin: auto;
+    
+}
+
+.project-container img{
+   width: 85%;
+   border:10px solid #fff;
+}
 
 /*HOME FLEXBOX*/
 
@@ -227,7 +242,7 @@ footer{
     text-align: center;
     margin-top: 20px;
     padding: 20px;
-    background-color: #fff;
+    background-color: #fdfdfd;
 }
 
 
@@ -311,6 +326,10 @@ footer{
         display: block;
     }
     
+        .project-container img{
+   width: 100%;
+}   
+    
 }
 
 
@@ -327,5 +346,7 @@ footer{
     color: #ff4622;
     font-size: 4em;
 }
+    
+
     
 }
