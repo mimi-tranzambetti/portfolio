@@ -326,10 +326,14 @@ footer{
         display: block;
     }
     
-        .project-container img{
-   width: 100%;
-}   
+  
     
+}
+
+@media screen and (min-width: 680px){
+            .project-container img{
+   width: 100%;
+} 
 }
 
 
