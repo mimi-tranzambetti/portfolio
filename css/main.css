@@ -22,7 +22,7 @@ body{
     min-width: 300px;
 }
 
-/* LANDING STRIP #fd473c*/
+/* LANDING STRIP & HEADER TEXTS #fd473c*/
 .landing{
     background: linear-gradient(#fafafa, #fafafa);
     background-color: #f8f8f8;
@@ -46,7 +46,6 @@ body{
     max-width: 600px;
     margin-top: 60px;
 }
-
 
 .intro h2, .project-intro h2{
     color: #ff4622;
@@ -84,6 +83,29 @@ img{
    border:10px solid #fff;
 }
 
+/* IMAGE GALLERY */
+
+.gallery {
+  /* Prevent vertical gaps */
+  line-height: 0;
+  -webkit-column-count: 1;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    1;
+  -moz-column-gap:      0px;
+  column-count:         1;
+  column-gap:           0px;  
+    width: 80%;
+    padding: 0px;
+    margin: auto;
+}
+
+.gallery img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+  border: none;
+}
+
 /*HOME FLEXBOX*/
 
 .container {
@@ -100,10 +122,6 @@ img{
     margin: auto;
     position: relative;
     text-align: left;
-    -webkit-transition:  1s;
-    -moz-transition:  1s;
-    -o-transition:  1s;
-    transition:  1s;
     margin: 1rem;
     float: left;
     -webkit-transition:  .5s;
@@ -326,7 +344,18 @@ footer{
         display: block;
     }
     
-  
+    
+  .gallery {
+          -moz-column-count:    2;
+          -webkit-column-count: 2;
+          column-count:         2;
+      width: 85%;
+      -webkit-transition:  0.5s;
+    -moz-transition:  0.5s;
+    -o-transition:  0.5s;
+    transition:  0.5s;
+        }
+    
     
 }
 
@@ -334,13 +363,17 @@ footer{
             .project-container img{
    width: 100%;
 } 
+    .gallery {
+        width: 90%;
+        }
+    
 }
 
 
 @media screen and (min-width: 1000px) {
   .project {
     width: calc(33.3333% - 2rem);
-  }
+    }
     
     .intro{
     margin-left: 100px;
@@ -348,8 +381,14 @@ footer{
     
     .intro h2, .project-intro h2{
     color: #ff4622;
-    font-size: 4em;
-}
+    font-size: 4em; }
+    
+      .gallery {
+          -moz-column-count:    3;
+          -webkit-column-count: 3;
+          column-count:         3;
+          width: 100%;
+        }
     
 
     
