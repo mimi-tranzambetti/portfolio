@@ -326,15 +326,16 @@ a, a:visited {
     transition: 0.2s;
 }
 
-.description a, .intro a, .bio a{
+.description a, .intro a, .bio a, .project-intro a{
 	color: #ff4622;
 }
 
-.description a:hover, .intro a:hover, .bio a:hover{
+.description a:hover, .intro a:hover, .bio a:hover, .project-intro a:hover{
 	
     text-decoration: underline;
 }
 
+/* TYPED JS */
 .typed-cursor{
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
@@ -372,10 +373,51 @@ a, a:visited {
             opacity: 0.8;
         }
 
+/* PRESS CARDS */
+.press {
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+	box-shadow: 0 0 2px #ddd;
+	display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    min-height: 420px;
+}
+
+    .press img 
+    { margin-bottom:0px; width: 100%; vertical-align: middle; }
+
+    .press h2{
+        color: #ff4622;
+        font-size: 1.6em;
+        font-family: 'Calibre Semibold';
+        padding: 0px 20px;
+    }
+
+	.press p {
+		display: inline-block;
+		vertical-align: middle;
+		width: 100%;
+        margin: auto;
+		padding: 0px 20px 20px 20px;
+	}
+	.press:hover {
+		border-bottom: 1px solid #bbb;
+		box-shadow: 0 0 2px #bbb;
+	}
+
+
+.bold {
+	font-weight: 600;
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+.quote {
+	opacity: .5;
+}
 
 /* MEDIA QUERIES */
-
-
 
 @media screen and (min-width: 550px) {
   .grid {
@@ -423,6 +465,7 @@ a, a:visited {
         }
     
     
+    
 }
 
 @media screen and (min-width: 680px){
@@ -434,6 +477,11 @@ a, a:visited {
         border: none;
     }
     
+    .press{
+        width: calc(33.3333% - 2rem);
+        float: left;
+          margin: 1rem;
+    }
 }
 
 
@@ -451,6 +499,7 @@ a, a:visited {
     font-size: 4em; }
     
       
+    
     
         .project-container img{
    width: 100%;
