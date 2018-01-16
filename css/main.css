@@ -464,6 +464,20 @@ a, a:visited {
     transition:  0.5s;
         }
     
+    .project h3{
+    top: 8%;
+    bottom: 70%;
+    left: 15%;
+    right: 10%;
+    }
+
+.project p{
+    top: 31%;
+    bottom: 20%;
+    left: 15%;
+    right: 10%;
+    }
+    
     
     
 }
@@ -482,6 +496,20 @@ a, a:visited {
         float: left;
           margin: 1rem;
     }
+    
+    .project h3{
+    top: 25%;
+    bottom: 60%;
+    left: 15%;
+    right: 10%;
+}
+
+.project p{
+    top: 40%;
+    bottom: 20%;
+    left: 15%;
+    right: 10%;
+}
 }
 
 
