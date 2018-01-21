@@ -420,12 +420,7 @@ a, a:visited {
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 550px) {
-  .grid {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-    
+
     .landing{
     }
     
@@ -483,6 +478,13 @@ a, a:visited {
 }
 
 @media screen and (min-width: 680px){
+      .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+    
+    
     .project-container img{
    width: 100%;
     border:5px solid #fff;
