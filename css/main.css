@@ -149,7 +149,17 @@ img{
     transition:  .5s;
 }
 
-.project h3{
+.col-md-4 img{
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+    -webkit-transition:  .5s;
+    -moz-transition:  .5s;
+    -o-transition:  .5s;
+    transition:  .5s;
+}
+
+.project h3, .col-md-4 h3{
     opacity: 0;
     top: 25%;
     bottom: 60%;
@@ -171,7 +181,7 @@ img{
 
 }
 
-.project p{
+.project p, .col-md-4 p{
     opacity: 0;
     font-size: 1.2em;
     top: 40%;
@@ -202,6 +212,24 @@ img{
 }
 
 .project:hover img{
+    opacity: 0.05;
+    
+}
+
+.col-md-4:hover h3{
+    opacity: 1;
+}
+
+.col-md-4:hover p{
+    opacity: 1;
+}
+
+.col-md-4:hover{
+    background-color: #fafafa;
+    border-radius: 5px;
+}
+
+.col-md-4:hover img{
     opacity: 0.05;
     
 }
@@ -265,6 +293,11 @@ nav {
     min-width: 280px;
     max-width: 600px;
     margin-top: 10px;
+}
+
+h1{
+    color: #ff4622; 
+    text-decoration: underline;
 }
 
 .description h2{
@@ -459,20 +492,20 @@ a, a:visited {
     transition:  0.5s;
         }
     
-    .project h3{
+.project h3, .col-md-4 h3{
     top: 8%;
     bottom: 70%;
     left: 15%;
     right: 10%;
     }
 
-.project p{
+.project p, .col-md-4 p{
     top: 31%;
     bottom: 20%;
     left: 15%;
     right: 10%;
     }
-    
+
     
     
 }
@@ -499,14 +532,14 @@ a, a:visited {
           margin: 1rem;
     }
     
-    .project h3{
+    .project h3, .col-md-4 h3{
     top: 25%;
     bottom: 60%;
     left: 15%;
     right: 10%;
 }
 
-.project p{
+.project p, .col-md-4 p{
     top: 40%;
     bottom: 20%;
     left: 15%;
