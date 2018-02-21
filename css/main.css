@@ -110,8 +110,8 @@ img{
   height: auto !important;
   border: none;
     margin-bottom: 0px;
-    margin: 15px;
-    
+    padding: 5px;
+    border-radius: 10px;
 }
 
 /*HOME FLEXBOX*/
