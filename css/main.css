@@ -22,6 +22,16 @@ body{
     min-width: 300px;
 }
 
+/* SELECTION COLOR */
+::selection {
+    background: #ff4622;
+    color: #ffffff;
+}
+::-moz-selection {
+    background: #ff4622;
+    color: #ffffff;
+}
+
 /* LANDING STRIP & HEADER TEXTS #fd473c*/
 .landing{
     background: linear-gradient(#fafafa, #fafafa);
